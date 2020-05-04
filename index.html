@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Voice Deck</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+
+            <li><a href="#casestudies">Case Studies</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <script src="app.js"></script>
+
+    <section>
+      
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">1 / 3</div> -->
+              <img src="assets/img1.jpeg" style="width:100%">
+              <!-- <div class="text">Caption Text</div> -->
+            </div>
+          
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">2 / 3</div> -->
+              <img src="assets/img2.jpg" style="width:100%">
+              <!-- <div class="text">Caption Two</div> -->
+            </div>
+          
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">3 / 3</div> -->
+              <img src="assets/img3.jpg" style="width:100%">
+              <!-- <div class="text">Caption Three</div> -->
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+        
+          <script>
+              var slideIndex = 1;
+                showSlides(slideIndex);
+
+                // Next/previous controls
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+
+                // Thumbnail image controls
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                }
+          </script>
+        
+        </section>
+
+        <section class="aboutus" id="aboutus">
+
+          
+          
+      
+          <h1>About Us</h1>
+          <div class="border"></div>
+      
+          <div class="main">
+        
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1">Who We Are</label>
+        
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2">Vision</label>
+        
+            <input id="tab3" type="radio" name="tabs">
+            <label for="tab3">Mission</label>
+        
+            
+        
+            <div class="content">  
+              <div id="content1">
+              <p>We are a team of technology researchers formed in October 2017. We conceptualize, build and deploy new technologies in collaboration with organizations and publish research papers on the results at top conferences around the world, including ACM CSCW, ACM CHI, ACL LREC, and many more.</p>
+              </div>
+        
+              <div id="content2">
+              <p>Enabling the next billion users to become technologically adept</p>
+              </div>
+        
+              <div id="content3">
+              <p>To deploy end-to-end technologies that help the lives of the poorest people around the world</p>
+              </div>
+        
+              
+            </div>
+        
+          </div>
+
+
+
+        </section>
+
+        <section class="services" id="services">
+
+            
+
+            <div class="services-section">
+                <div class="inner-width">
+                  <h1 class="section-title">Our Services</h1>
+                  <div class="border"></div>
+                  <div class="services-container">
+          
+                    <div class="service-box">
+                      <div class="service-icon">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="service-title">Grant Writing</div>
+                      <div class="service-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                      </div>
+                    </div>
+          
+                    <div class="service-box">
+                      <div class="service-icon">
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                      </div>
+                      <div class="service-title">Content Creation</div>
+                      <div class="service-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                      </div>
+                    </div>
+          
+                    <div class="service-box">
+                      <div class="service-icon">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                      </div>
+                      <div class="service-title">Project Cost Appraisal</div>
+                      <div class="service-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                      </div>
+                    </div>
+          
+                    <div class="service-box">
+                      <div class="service-icon">
+                        <i class="fa fa-rocket" aria-hidden="true"></i>
+                      </div>
+                      <div class="service-title">Deployment of new technologies</div>
+                      <div class="service-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                      </div>
+                    </div>
+          
+                    <div class="service-box">
+                      <div class="service-icon">
+                        <i class="fa fa-cogs" aria-hidden="true"></i>
+                      </div>
+                      <div class="service-title">Enterprise App software development</div>
+                      <div class="service-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                      </div>
+                    </div>
+          
+                    <div class="service-box">
+                      <div class="service-icon">
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                      </div>
+                      <div class="service-title">Mobile App and Web Development</div>
+                      <div class="service-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+        </section>
+        
+        <section class="casestudies" id="casestudies">
+
+          <div class="main">
+            <h1>Case Studies</h1>
+          <div class="border"></div>
+            <ul class="cards">
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="assets/res.jpg"></div>
+                  <div class="card_content">
+                    <!-- <h2 class="card_title">Card Grid Layout</h2> -->
+                    <p class="card_text">Saiganesh Swaminathan, Indrani Medhi Thies, Devansh Mehta, Edward Cutrell, Amit Sharma, and William Thies. 2019. Learn2Earn: Using Mobile Airtime Incentives to Bolster Public Awareness Campaigns. Proceedings of the ACM on Human-Computer Interaction 3, CSCW (2019), <br> 1– 20</p>
+                    <button class="btn card_btn" onclick="window.location.href = 'https://dl.acm.org/doi/abs/10.1145/3359151';">Read More</button>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="assets/res.jpg"></div>
+                  <div class="card_content">
+                    <!-- <h2 class="card_title">Card Grid Layout</h2> -->
+                    <p class="card_text">Ramaravind Kommiya Mothilal, Devansh Mehta, Alok Sharma, William Thies, and Amit Sharma. 2019. Learnings from an Ongoing Deployment of an IVR-based Platform for Voter Awareness. In Conference Companion Publication of the 2019 on Computer Supported Cooperative Work and Social Computing. 257–261.</p>
+                    <button class="btn card_btn" onclick="window.location.href = 'https://dl.acm.org/doi/abs/10.1145/3311957.3359486';">Read More</button>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="assets/res.jpg"></div>
+                  <div class="card_content">
+                    <!-- <h2 class="card_title">Card Grid Layout</h2> -->
+                    <p class="card_text">Devansh Mehta, Alok Sharma, Ramaravind K. Kommiya Mothilal, Chiraag, Anurag Shukla, Vishnu Prasad, William Thies, Venkanna U, Colin Scott, Amit Sharma. 2020. Facilitating Media Distribution with Monetary Incentives. CHI EA '20: Extended Abstracts of the 2020 CHI Conference on Human Factors in Computing Systems| April 2020</p>
+                    <button class="btn card_btn" onclick="window.location.href = 'https://dl.acm.org/doi/abs/10.1145/3334480.3383032';">Read More</button>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="assets/res.jpg"></div>
+                  <div class="card_content">
+                    <!-- <h2 class="card_title">Card Grid Layout</h2> -->
+                    <p class="card_text">Devansh Mehta, Sebastin Santy, Ramaravind Kommiya Mothilal,  Brij Mohan Lal Srivastava, Alok Sharma, Anurag Shukla, Vishnu Prasad, Venkanna U, Amit Sharma, Kalika Bali. Learnings from Technological Interventions in a Low Resource Language: A Case-Study on Gondi. Proceedings of Language Resources and Evaluation (LREC), Marseille, France (2020)</p>
+                    <button class="btn card_btn" onclick="window.location.href = 'https://arxiv.org/abs/2004.10270';">Read More</button>
+                  </div>
+                </div>
+              </li>
+              
+            </ul>
+          </div>
+          
+
+        </section>
+
+        <section class="team" id="team">
+
+            <div class="teamcont">
+                <h1 class="heading">Meet The Team</h1>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="assets/pfbg.jpg" alt="card background" class="card-img" width="100px">
+                        <img src="assets/devansh_photo.JPG" alt="Devansh" class="profile-img">
+                        <h1>Devansh Mehta</h1>
+                        <p class="job-title">CEO</p>
+                        <!-- <p class="about"> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+                            Officiis officia dicta ipsum labore, placeat non, ex, explicabo quibusdam <br>
+                            provident earum unde! Nobis animi ex porro aperiam at dolore iste adipisci.</p> -->
+                        <!-- <a href="#" class="btn">Contact</a> -->
+                        <ul class="social-media">
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <img src="assets/pfbg.jpg" alt="card background" class="card-img">
+                        <img src="assets/Screenshot 2020-05-01 at 4.50.56 PM.png" alt="Vishnu" class="profile-img">
+                        <h1>Vishnu Prasad</h1>
+                        <p class="job-title">COO</p>
+                        <!-- <p class="about"> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+                            Officiis officia dicta ipsum labore, placeat non, ex, explicabo quibusdam <br>
+                            provident earum unde! Nobis animi ex porro aperiam at dolore iste adipisci.</p> -->
+                        <!-- <a href="#" class="btn">Contact</a> -->
+                        <ul class="social-media">
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <img src="assets/pfbg.jpg" alt="card background" class="card-img">
+                        <img src="assets/alok_photo.jpg" alt="Alok" class="profile-img">
+                        <h1>Alok Sharma</h1>
+                        <p class="job-title">Tech Consultant</p>
+
+                        <!-- <p class="about"> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+                            Officiis officia dicta ipsum labore, placeat non, ex, explicabo quibusdam <br>
+                            provident earum unde! Nobis animi ex porro aperiam at dolore iste adipisci.</p> -->
+                        <!-- <a href="#" class="btn">Contact</a> -->
+                        <ul class="social-media">
+                            <li><a href="#"><<i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <img src="assets/pfbg.jpg" alt="card background" class="card-img">
+                        <img src="assets/Screenshot 2020-05-01 at 4.52.01 PM.png" alt="Chirag" class="profile-img">
+                        <h1>Chirag</h1>
+                        <p class="job-title">CTO</p>
+                        <!-- <p class="about"> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+                            Officiis officia dicta ipsum labore, placeat non, ex, explicabo quibusdam <br>
+                            provident earum unde! Nobis animi ex porro aperiam at dolore iste adipisci.</p> -->
+                        <!-- <a href="#" class="btn">Contact</a> -->
+                        <ul class="social-media">
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="clients" id="clients">
+
+            <h1 class="headingP">Clients</h1>
+
+            <div class="clientswrapper">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="assets/columbia.jpg" alt="">
+                        <img src="assets/DAI.png" alt="">
+                        <img src="assets/ford.png" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="assets/columbia.jpg" alt="">
+                        <img src="assets/DAI.png" alt="">
+                        <img src="assets/ford.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="partners" id="partners">
+
+            <h1 class="headingC">Partners</h1>
+
+            <div class="partnerscontainer">
+                <div class="box">
+                    <img src="assets/csai.JPG" alt="">
+                </div>
+                <div class="box">
+                    <img src="assets/microsoft.jpg" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+  
+          <div class="contactcontainer">
+            <h1 class="headingCo">Contact Us</h1>
+
+            <p>Email us and keep upto date</p>
+           <div class="contact-form">
+
+                <!-- First grid -->
+             <div>
+               <i class="fa fa-map-marker"></i><span class="form-info">  15/17, R. No 16, Ladwadi, Akbarchambers,<br> Old Hanuman Lane, Mumbai 400002</span><br>
+               <i class="fa fa-phone" > </i><span class="form-info">  +91 00034567890</span><br>
+               <!-- <i class="fa fa-envelope"></i><span class="form-info">  devansh@voicedeck.in</span> -->
+             </div>
+             
+                 <!-- second grid -->
+         <div>        
+           <form id="contact-form-client" action="https://formspree.io/xyynywje"
+           method="POST">
+             <input type="text" placeholder="Your Name" required id="inputName">
+             <input type="Email" placeholder="Email" required id="inputEmail"><br>
+             <input type="text" placeholder="Subject of this message" id="inputSubject"><br>
+             <textarea name="message" placeholder="Message" rows="5" required id="inputMessage"></textarea><br>
+             <!-- <button class="submit" >Send Message</button>  -->
+             <input type="submit" class="submit">
+             
+           </form>   
+             </div>
+           </div>
+         </div>
+
+         <!-- <script src="contact.js"></script> -->
+            
+          </section>
+
+        
+
+               
+
+</body>
+
+</html>
