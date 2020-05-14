@@ -23,7 +23,7 @@ nav {
 .logo {
     display: flex;
     flex-direction: row;
-
+    overflow: hidden;
     color: bisque;
     text-transform: uppercase;
     /* letter-spacing: 1px; */
@@ -34,12 +34,8 @@ nav {
   padding-top: 17px;
 }
 
-.logo 
 
-.logo1 {
-  width: 5%;
-  height: 5%;
-}
+
 
 .nav-links{
     display: flex;
